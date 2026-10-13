@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcus — Electrical Engineering & Rocketry</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dark: {
+                            900: '#0a0f1d',
+                            800: '#111827',
+                            700: '#1f293d',
+                        },
+                        accent: {
+                            500: '#3b82f6',
+                            400: '#60a5fa',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-dark-900 text-slate-100 font-sans antialiased selection:bg-accent-500 selection:text-white">
+
+    <!-- Navigation Bar -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-dark-900/80 backdrop-blur-md border-b border-slate-800">
+        <nav class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#hero" class="text-lg font-bold tracking-wider text-white flex items-center gap-2">
+                <span class="text-accent-400">&lt;</span>Marcus<span class="text-accent-400">/&gt;</span>
+            </a>
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-accent-400 transition-colors">About</a>
+                <a href="#projects" class="hover:text-accent-400 transition-colors">Projects</a>
+                <a href="#experience" class="hover:text-accent-400 transition-colors">Experience</a>
+                <a href="#contact" class="hover:text-accent-400 transition-colors">Contact</a>
+            </div>
+            <a href="#contact" class="hidden sm:inline-flex items-center px-4 py-2 text-xs font-semibold uppercase tracking-wider bg-accent-500 hover:bg-accent-400 text-white rounded-lg transition-all shadow-lg shadow-accent-500/20">
+                Get in Touch
+            </a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="min-h-screen flex items-center justify-center pt-24 pb-16 px-6 relative overflow-hidden">
+        <!-- Background Grid Effect -->
+        <div class="absolute inset-0 bg-[linear-gradient(to_right,#1f293d15_1px,transparent_1px),linear-gradient(to_bottom,#1f293d15_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)]"></div>
+        
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-accent-400 text-xs font-medium mb-6">
+                <i data-lucide="cpu" class="w-3.5 h-3.5"></i> Electrical Engineering Undergraduate & Systems Lead
+            </div>
+            <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight mb-6 leading-tight">
+                Engineering High-Performance <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400">Hardware & Propulsion Systems</span>
+            </h1>
+            <p class="text-lg sm:text-xl text-slate-400 mb-10 max-w-2xl mx-auto">
+                Building liquid rocket propulsion architectures, thrust vector control mechanisms, embedded digital logic, and robotic testbeds.
+            </p>
+            <div class="flex flex-wrap items-center justify-center gap-4">
+                <a href="#projects" class="px-6 py-3 bg-accent-500 hover:bg-accent-400 text-white font-medium rounded-xl transition-all shadow-lg shadow-accent-500/20 flex items-center gap-2">
+                    Explore Projects <i data-lucide="arrow-down" class="w-4 h-4"></i>
+                </a>
+                <a href="#contact" class="px-6 py-3 bg-slate-800 hover:bg-slate-700 text-slate-200 font-medium rounded-xl border border-slate-700 transition-all">
+                    Contact Me
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Skills Section -->
+    <section id="about" class="py-20 px-6 border-t border-slate-800/60 bg-dark-800/40">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-2xl sm:text-3xl font-bold text-white mb-3">Technical Expertise</h2>
+                <p class="text-slate-400 max-w-xl mx-auto">Core competencies across embedded firmware, mechanical design, and aerospace systems.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Skill Category 1 -->
+                <div class="bg-dark-800 border border-slate-700/60 rounded-2xl p-6 hover:border-accent-500/50 transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-accent-500/10 text-accent-400 flex items-center justify-center mb-5">
+                        <i data-lucide="cpu" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-white mb-3">Embedded & Digital Logic</h3>
+                    <p class="text-sm text-slate-400 mb-4">Designing microcontrollers, FPGA synthesis, and low-level firmware architecture.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2.5 py-1 bg-slate-900 text-slate-300 text-xs rounded-md border border-slate-700">C / Python</span>
+                        <span class="px-2.5 py-1 bg-slate-900 text-slate-300 text-xs rounded-md border border-slate-700">SystemVerilog</span>
+                        <span class="px-2.5 py-1 bg-slate-900 text-slate-300 text-xs rounded-md border border-slate-700">RISC-V</span>
+                        <span class="px-2.5 py-1 bg-slate-900 text-slate-300 text-xs rounded-md border border-slate-700">FPGA / Quartus</span>
+                    </div>
+                </div>
+
+                <!-- Skill Category 2 -->
+                <div class="bg-dark-800 border border-slate-700/60 rounded-2xl p-6 hover:border-accent-500/50 transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-accent-500/10 text-accent-400 flex items-center justify-center mb-5">
+                        <i data-lucide="rocket" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-white mb-3">Propulsion & Aerospace</h3>
+                    <p class="text-sm text-slate-400 mb-4">Developing liquid-fueled rocket propulsion, thrust vector control, and aerodynamic airfoils.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2.5 py-1 bg-slate-900 text-slate-300 text-xs rounded-md border border-slate-700">Liquid Propulsion</span>
+                        <span class="px-2.5 py-1 bg-slate-900 text-slate-300 text-xs rounded-md border border-slate-700">TVC Systems</span>
+                        <span class="px-2.5 py-1 bg-slate-900 text-slate-300 text-xs rounded-md border border-slate-700">XFLR5 / Flow5</span>
+                        <span class="px-2.5 py-1 bg-slate-900 text-slate-300 text-xs rounded-md border border-slate-700">MATLAB</span>
+                    </div>
+                </div>
+
+                <!-- Skill Category 3 -->
+                <div class="bg-dark-800 border border-slate-700/60 rounded-2xl p-6 hover:border-accent-500/50 transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-accent-500/10 text-accent-400 flex items-center justify-center mb-5">
+                        <i data-lucide="layers" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-white mb-3">Mechanical CAD & Robotics</h3>
+                    <p class="text-sm text-slate-400 mb-4">Precision 3D modeling, advanced material fabrication, and robotic soft testbeds.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2.5 py-1 bg-slate-900 text-slate-300 text-xs rounded-md border border-slate-700">SOLIDWORKS</span>
+                        <span class="px-2.5 py-1 bg-slate-900 text-slate-300 text-xs rounded-md border border-slate-700">Onshape</span>
+                        <span class="px-2.5 py-1 bg-slate-900 text-slate-300 text-xs rounded-md border border-slate-700">CFRP & 3D Printing</span>
+                        <span class="px-2.5 py-1 bg-slate-900 text-slate-300 text-xs rounded-md border border-slate-700">Circuit Theory</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-6 border-t border-slate-800/60">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-2xl sm:text-3xl font-bold text-white mb-3">Featured Projects</h2>
+                <p class="text-slate-400 max-w-xl mx-auto">A selection of rocketry, robotics, and hardware engineering projects.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-dark-800 border border-slate-700/60 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-accent-500/50 transition-all">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 bg-accent-500/10 text-accent-400 text-xs font-semibold rounded-full">Liquid Rocket Propulsion</span>
+                            <i data-lucide="rocket" class="w-5 h-5 text-slate-400"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Second-Generation Liquid-Fueled Rocket</h3>
+                        <p class="text-sm text-slate-400 mb-6">
+                            Leading the mechanical development of a high-altitude liquid-fueled rocket targeting 15,000 feet. Overseeing feed systems, structural linkages, and actuating hardware assemblies.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2.5 py-1 bg-slate-900 text-slate-300 text-xs rounded-md border border-slate-700">SOLIDWORKS</span>
+                            <span class="px-2.5 py-1 bg-slate-900 text-slate-300 text-xs rounded-md border border-slate-700">Fluid Systems</span>
+                            <span class="px-2.5 py-1 bg-slate-900 text-slate-300 text-xs rounded-md border border-slate-700">Actuators</span>
+                        </div>
+                    </div>
+                    <div class="px-6 py-4 bg-dark-900/50 border-t border-slate-700/40 flex items-center justify-between text-xs text-slate-400">
+                        <span>UBC Rocket</span>
+                        <a href="#" class="text-accent-400 hover:underline flex items-center gap-1">Details <i data-lucide="external-link" class="w-3.5 h-3.5"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-dark-800 border border-slate-700/60 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-accent-500/50 transition-all">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 bg-accent-500/10 text-accent-400 text-xs font-semibold rounded-full">Flight Controls</span>
+                            <i data-lucide="navigation" class="w-5 h-5 text-slate-400"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Thrust Vector Control Research Drone</h3>
+                        <p class="text-sm text-slate-400 mb-6">
+                            Designed structural assemblies and custom electronic housings for an active controls research drone on the Thrust Vectoring subteam.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2.5 py-1 bg-slate-900 text-slate-300 text-xs rounded-md border border-slate-700">Avionics Housings</span>
+                            <span class="px-2.5 py-1 bg-slate-900 text-slate-300 text-xs rounded-md border border-slate-700">Mechanical CAD</span>
+                            <span class="px-2.5 py-1 bg-slate-900 text-slate-300 text-xs rounded-md border border-slate-700">Carbon Fiber</span>
+                        </div>
+                    </div>
+                    <div class="px-6 py-4 bg-dark-900/50 border-t border-slate-700/40 flex items-center justify-between text-xs text-slate-400">
+                        <span>Controls Research</span>
+                        <a href="#" class="text-accent-400 hover:underline flex items-center gap-1">Details <i data-lucide="external-link" class="w-3.5 h-3.5"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="bg-dark-800 border border-slate-700/60 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-accent-500/50 transition-all">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 bg-accent-500/10 text-accent-400 text-xs font-semibold rounded-full">Robotics Testbeds</span>
+                            <i data-lucide="bot" class="w-5 h-5 text-slate-400"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Soft Robotics Testbed Infrastructure</h3>
+                        <p class="text-sm text-slate-400 mb-6">
+                            Engineered specialized testing fixtures and mechanical testbeds for soft robotic systems during engineering research appointments.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2.5 py-1 bg-slate-900 text-slate-300 text-xs rounded-md border border-slate-700">Prototyping</span>
+                            <span class="px-2.5 py-1 bg-slate-900 text-slate-300 text-xs rounded-md border border-slate-700">Test Rig Design</span>
+                            <span class="px-2.5 py-1 bg-slate-900 text-slate-300 text-xs rounded-md border border-slate-700">Precision Mechanics</span>
+                        </div>
+                    </div>
+                    <div class="px-6 py-4 bg-dark-900/50 border-t border-slate-700/40 flex items-center justify-between text-xs text-slate-400">
+                        <span>PRIME Robotics Lab</span>
+                        <a href="#" class="text-accent-400 hover:underline flex items-center gap-1">Details <i data-lucide="external-link" class="w-3.5 h-3.5"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="bg-dark-800 border border-slate-700/60 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-accent-500/50 transition-all">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 bg-accent-500/10 text-accent-400 text-xs font-semibold rounded-full">Aerodynamics</span>
+                            <i data-lucide="wind" class="w-5 h-5 text-slate-400"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Custom RC Aircraft & Micro Flying Wings</h3>
+                        <p class="text-sm text-slate-400 mb-6">
+                            Evaluated airfoil polars, Reynolds numbers, and stability derivatives using Flow5 and XFLR5 to design and fabricate custom radio-controlled ultralight wing planforms.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2.5 py-1 bg-slate-900 text-slate-300 text-xs rounded-md border border-slate-700">Flow5 / XFLR5</span>
+                            <span class="px-2.5 py-1 bg-slate-900 text-slate-300 text-xs rounded-md border border-slate-700">Airfoil Analysis</span>
+                            <span class="px-2.5 py-1 bg-slate-900 text-slate-300 text-xs rounded-md border border-slate-700">Composite Layup</span>
+                        </div>
+                    </div>
+                    <div class="px-6 py-4 bg-dark-900/50 border-t border-slate-700/40 flex items-center justify-between text-xs text-slate-400">
+                        <span>Independent Design</span>
+                        <a href="#" class="text-accent-400 hover:underline flex items-center gap-1">Details <i data-lucide="external-link" class="w-3.5 h-3.5"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 px-6 border-t border-slate-800/60 bg-dark-800/40">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-2xl sm:text-3xl font-bold text-white mb-3">Experience & Leadership</h2>
+                <p class="text-slate-400">Roles in student engineering design teams and academic research labs.</p>
+            </div>
+
+            <div class="space-y-8 border-l border-slate-700/60 ml-4 sm:ml-32 pl-6 sm:pl-8 relative">
+                <!-- Exp 1 -->
+                <div class="relative">
+                    <span class="absolute -left-[35px] sm:-left-[43px] top-1.5 w-4 h-4 rounded-full bg-accent-500 border-4 border-dark-900"></span>
+                    <span class="text-xs font-semibold text-accent-400 uppercase tracking-wider mb-1 block">2026 — Present</span>
+                    <h3 class="text-lg font-bold text-white">Liquid Rocket & Actuating Systems Lead</h3>
+                    <p class="text-sm font-medium text-slate-300 mb-2">UBC Rocket</p>
+                    <p class="text-sm text-slate-400">Directing the mechanical design and fabrication of the team's second-generation liquid-fueled rocket system targeting high-altitude flight benchmarks.</p>
+                </div>
+
+                <!-- Exp 2 -->
+                <div class="relative">
+                    <span class="absolute -left-[35px] sm:-left-[43px] top-1.5 w-4 h-4 rounded-full bg-slate-700 border-4 border-dark-900"></span>
+                    <span class="text-xs font-semibold text-accent-400 uppercase tracking-wider mb-1 block">2026 — 2027</span>
+                    <h3 class="text-lg font-bold text-white">Engineering Research Assistant</h3>
+                    <p class="text-sm font-medium text-slate-300 mb-2">PRIME Robotics Lab, University of British Columbia</p>
+                    <p class="text-sm text-slate-400">Designing advanced experimental testbeds and mechanical apparatuses for soft robotics research.</p>
+                </div>
+
+                <!-- Exp 3 -->
+                <div class="relative">
+                    <span class="absolute -left-[35px] sm:-left-[43px] top-1.5 w-4 h-4 rounded-full bg-slate-700 border-4 border-dark-900"></span>
+                    <span class="text-xs font-semibold text-accent-400 uppercase tracking-wider mb-1 block">2025 — 2026</span>
+                    <h3 class="text-lg font-bold text-white">Mechanical Subteam Member — Thrust Vectoring</h3>
+                    <p class="text-sm font-medium text-slate-300 mb-2">UBC Rocket</p>
+                    <p class="text-sm text-slate-400">Engineered structural components and avionics housings for controls research drone development over an eight-month tenure.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-6 border-t border-slate-800/60">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-2xl sm:text-3xl font-bold text-white mb-3">Let's Connect</h2>
+            <p class="text-slate-400 mb-10">Interested in collaboration, engineering discussions, or rocketry partnerships? Reach out below.</p>
+            
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <a href="mailto:your.email@ubc.ca" class="px-6 py-3 bg-dark-800 border border-slate-700 hover:border-accent-500 rounded-xl text-slate-200 flex items-center gap-2 transition-all">
+                    <i data-lucide="mail" class="w-4 h-4 text-accent-400"></i> Email Me
+                </a>
+                <a href="https://github.com" target="_blank" class="px-6 py-3 bg-dark-800 border border-slate-700 hover:border-accent-500 rounded-xl text-slate-200 flex items-center gap-2 transition-all">
+                    <i data-lucide="github" class="w-4 h-4 text-accent-400"></i> GitHub
+                </a>
+                <a href="https://linkedin.com" target="_blank" class="px-6 py-3 bg-dark-800 border border-slate-700 hover:border-accent-500 rounded-xl text-slate-200 flex items-center gap-2 transition-all">
+                    <i data-lucide="linkedin" class="w-4 h-4 text-accent-400"></i> LinkedIn
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-slate-800/60 text-center text-xs text-slate-500">
+        <p>&copy; 2026 Marcus. Built with HTML & Tailwind CSS. Hosted on GitHub Pages.</p>
+    </footer>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
